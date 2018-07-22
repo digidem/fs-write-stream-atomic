@@ -1,6 +1,6 @@
 {
-  "name": "fs-write-stream-atomic",
-  "version": "1.0.10",
+  "name": "@digidem/fs-write-stream-atomic",
+  "version": "1.1.0",
   "description": "Like `fs.createWriteStream(...)`, but atomic.",
   "main": "index.js",
   "directories": {
