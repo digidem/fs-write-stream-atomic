@@ -32,4 +32,4 @@ read.pipe(write)
   * `encoding` {String} default = 'utf8'
   * `mode` {Number} default = `0666`
   * `flags` {String} default = `'w'`
-
+  * `getTmpname` {Function} Custom function for generating a tmp name for the file as it is being copied. Passed the filename as the argument, should return a string valid filename. Default [blob/custom-tmp-name/index.js#L16-L19](blob/custom-tmp-name/index.js#L16-L19)

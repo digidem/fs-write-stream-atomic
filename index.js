@@ -40,7 +40,11 @@ function WriteStreamAtomic (path, options) {
   this.__isWin = options && options.hasOwnProperty('isWin') ? options.isWin : process.platform === 'win32'
 
   this.__atomicTarget = path
-  this.__atomicTmp = getTmpname(path)
+  if (options && typeof options.getTmpname === 'function') {
+    this.__atomicTmp = options.getTmpname(path)
+  } else {
+    this.__atomicTmp = getTmpname(path)
+  }
 
   this.__atomicChown = options && options.chown
 
