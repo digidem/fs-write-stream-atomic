@@ -7,3 +7,9 @@ node_js:
   - "8"
   - "6"
   - "11"
+notifications:
+  email: false
+os:
+  - linux
+  - osx
+  - windows
